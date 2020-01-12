@@ -16,13 +16,12 @@ export const useStage = (player, resetPlayer) => {
             newStage[y + player.pos.y][x + player.pos.x] = [
               value,
               `${player.collided ? 'merged' : 'clear'}`
-            ]
+            ];
           }
         });
       });
 
       return newStage;
-
     };
 
     setStage(prev => updateStage(prev));
