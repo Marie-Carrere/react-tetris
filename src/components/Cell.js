@@ -13,11 +13,10 @@ border-left-color: rgba(${props => props.color}, 0.3);
 `
 
 const Cell = ({ type }) => (
-  <StyledCell 
-    type={type} 
+  <StyledCell
+    type={type}
     color={TETROMINOS[type].color}
   >
-    cell
   </StyledCell>
 )
 
